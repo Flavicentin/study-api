@@ -1,8 +1,13 @@
 package com.github.flavicentin.study_api.service;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.stereotype.Service;
+
 import com.github.flavicentin.study_api.model.Pessoa;
 
+
+@Service
 public class PessoaService {
 	private List<Pessoa> pessoas;
 	
@@ -13,6 +18,7 @@ public class PessoaService {
 	private void load() {
 		pessoas = new ArrayList<>();
 		Pessoa pessoa = new Pessoa ();
+		
 		pessoa.setId(1L);
 		pessoa.setNome("Flávio");
 		pessoas.add(pessoa);
